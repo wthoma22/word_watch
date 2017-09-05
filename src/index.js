@@ -1,5 +1,6 @@
 const $ = require('jquery')
 const WordWatch = require('./WordWatch')
+const api = require('./WordWatchAPI')
 
 document.addEventListener("DOMContentLoaded", () => {
 
