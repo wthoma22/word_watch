@@ -16,6 +16,20 @@ class Api {
       return post;
     })
   }
+
+  static postWord(word) {
+    return $.ajax({
+      url: base_url + '/api/v1/words',
+      type: 'POST',
+      dataType: "json",
+      data: {word: {value: word} },
+      error: (error) => {
+      }
+    }).done((post) => {
+      return post
+    })
+  }
+
 }
 
 module.exports = Api
