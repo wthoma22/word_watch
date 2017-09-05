@@ -17,7 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
   $('button').on('click', () => {
     const input = $('textarea').val()
     const words = input.split(" ")
-    debugger
-    Word.sendWord(words)
+    Word.allFunctions(words)
   })
+
+  $('textarea').keypress((key) => {
+    if (key.which == 13) {
+      const input = $('textarea').val()
+      const words = input.split(" ")
+      Word.allFunctions(words)
+    }
+  })
+
 })
