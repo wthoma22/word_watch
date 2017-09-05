@@ -7,7 +7,7 @@ class Api {
 
   static getTopWord() {
     return $.ajax({
-      url: base_url + '/top_word',
+      url: base_url + '/api/v1/top_word',
       type: 'GET',
       dataType: "json",
       error: (error) => {
